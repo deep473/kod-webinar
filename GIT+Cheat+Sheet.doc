@@ -1,0 +1,632 @@
+Date: Wed, 24 Jul 2024 08:36:33 +0000 (UTC)
+Message-ID: <986979415.99.1721810193603@9e57d9351deb>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_98_2002366323.1721810193602"
+
+------=_Part_98_2002366323.1721810193602
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>GIT Cheat Sheet</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: var(--ds-surface, #fff) !important;
+        color: var(--ds-text, #000) !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: var(--ds-text, #000);
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>GIT Cheat Sheet</h1>
+    <div class=3D"Section1">
+        <h4 id=3D"GITCheatSheet-1.SetupandInitialization"><strong>1. Setup =
+and Initialization</strong></h4>
+<ul>
+<li>
+<p><code>git config --global user.name "Your Name"</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Configures your username in Git. This name=
+ will be associated with your commits.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git config --global user.name "Ja=
+ne Doe"</code></p></li>
+</ul></li>
+<li>
+<p><code>git config --global user.email "your.email@example.com"</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Configures your email in Git. This email w=
+ill be associated with your commits.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git config --global user.email "j=
+ane.doe@example.com"</code></p></li>
+</ul></li>
+<li>
+<p><code>git init</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Initializes a new Git repository in the cu=
+rrent directory.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git init</code></p></li>
+</ul></li>
+<li>
+<p><code>git clone &lt;repository&gt;</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Creates a local copy of a remote repositor=
+y. The repository URL can be SSH, HTTPS, or GIT.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git clone &lt;https://github.com/=
+user/repo.git</code>&gt;</p></li>
+</ul></li>
+</ul>
+<h4 id=3D"GITCheatSheet-2.BasicSnapshotting"><strong>2. Basic Snapshotting<=
+/strong></h4>
+<ul>
+<li>
+<p><code>git status</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Displays the state of the working director=
+y and the staging area, showing changes that have been staged, changes that=
+ haven=E2=80=99t been staged, and files that aren=E2=80=99t being tracked b=
+y Git.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git status</code></p></li>
+</ul></li>
+<li>
+<p><code>git add &lt;filename&gt;</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Adds the specified file to the staging are=
+a, making it ready to be committed.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git add README.md</code></p></li>
+</ul></li>
+<li>
+<p><code>git add .</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Adds all changes in the current directory =
+to the staging area.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git add .</code></p></li>
+</ul></li>
+<li>
+<p><code>git commit -m "Commit message"</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Records the staged changes to the reposito=
+ry with the specified commit message.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git commit -m "Initial commit"</c=
+ode></p></li>
+</ul></li>
+<li>
+<p><code>git commit -am "Commit message"</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Stages and commits changes to tracked file=
+s in one step, using the specified commit message.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git commit -am "Updated documenta=
+tion"</code></p></li>
+</ul></li>
+</ul>
+<h4 id=3D"GITCheatSheet-3.BranchingandMerging"><strong>3. Branching and Mer=
+ging</strong></h4>
+<ul>
+<li>
+<p><code>git branch</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Lists all local branches in the repository=
+. The current branch is marked with an asterisk (*).</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git branch</code></p></li>
+</ul></li>
+<li>
+<p><code>git branch &lt;branch-name&gt;</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Creates a new branch with the specified na=
+me.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git branch feature-branch</code><=
+/p></li>
+</ul></li>
+<li>
+<p><code>git checkout &lt;branch-name&gt;</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Switches to the specified branch.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git checkout feature-branch</code=
+></p></li>
+</ul></li>
+<li>
+<p><code>git checkout -b &lt;branch-name&gt;</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Creates and switches to a new branch in on=
+e step.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git checkout -b feature-branch</c=
+ode></p></li>
+</ul></li>
+<li>
+<p><code>git merge &lt;branch-name&gt;</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Merges the specified branch into the curre=
+nt branch.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git merge feature-branch</code></=
+p></li>
+</ul></li>
+<li>
+<p><code>git branch -d &lt;branch-name&gt;</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Deletes the specified branch. This is a =
+=E2=80=9Csafe=E2=80=9D operation in that Git prevents you from deleting the=
+ branch if it has unmerged changes.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git branch -d feature-branch</cod=
+e></p></li>
+</ul></li>
+</ul>
+<h4 id=3D"GITCheatSheet-4.RemoteRepositories"><strong>4. Remote Repositorie=
+s</strong></h4>
+<ul>
+<li>
+<p><code>git remote add &lt;name&gt; &lt;url&gt;</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Adds a remote repository with the specifie=
+d name and URL.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git remote add origin &lt;https:/=
+/github.com/user/repo.git</code>&gt;</p></li>
+</ul></li>
+<li>
+<p><code>git fetch &lt;remote&gt;</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Downloads objects and refs from another re=
+pository.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git fetch origin</code></p></li>
+</ul></li>
+<li>
+<p><code>git pull &lt;remote&gt;</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Fetches and integrates changes from the re=
+mote repository into the current branch.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git pull origin main</code></p></=
+li>
+</ul></li>
+<li>
+<p><code>git push &lt;remote&gt; &lt;branch&gt;</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Pushes the specified branch to the remote =
+repository.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git push origin feature-branch</c=
+ode></p></li>
+</ul></li>
+</ul>
+<h4 id=3D"GITCheatSheet-5.InspectingandComparing"><strong>5. Inspecting and=
+ Comparing</strong></h4>
+<ul>
+<li>
+<p><code>git log</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Displays the commit history for the curren=
+t branch.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git log</code></p></li>
+</ul></li>
+<li>
+<p><code>git log --oneline</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Displays the commit history in a compact f=
+ormat, with each commit on a single line.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git log --oneline</code></p></li>
+</ul></li>
+<li>
+<p><code>git diff</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Shows the changes between commits, the wor=
+king tree, etc.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git diff</code></p></li>
+</ul></li>
+<li>
+<p><code>git diff --staged</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Shows changes between the staging area and=
+ the last commit.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git diff --staged</code></p></li>
+</ul></li>
+<li>
+<p><code>git blame &lt;filename&gt;</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Shows what revision and author last modifi=
+ed each line of a file.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git blame README.md</code></p></l=
+i>
+</ul></li>
+</ul>
+<h4 id=3D"GITCheatSheet-6.UndoingChanges"><strong>6. Undoing Changes</stron=
+g></h4>
+<ul>
+<li>
+<p><code>git reset &lt;file&gt;</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Unstages the file, keeping the changes in =
+the working directory.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git reset README.md</code></p></l=
+i>
+</ul></li>
+<li>
+<p><code>git checkout -- &lt;file&gt;</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Discards changes in the working directory.=
+</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git checkout -- README.md</code><=
+/p></li>
+</ul></li>
+<li>
+<p><code>git reset --hard HEAD</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Resets the working directory to the last c=
+ommit, discarding all changes.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git reset --hard HEAD</code></p><=
+/li>
+</ul></li>
+<li>
+<p><code>git revert &lt;commit&gt;</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Creates a new commit that undoes the chang=
+es made by the specified commit.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git revert a1b2c3d</code></p></li=
+>
+</ul></li>
+</ul>
+<h4 id=3D"GITCheatSheet-7.Stashing"><strong>7. Stashing</strong></h4>
+<ul>
+<li>
+<p><code>git stash</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Stashes changes in the working directory, =
+allowing you to clean up the directory without committing your current chan=
+ges.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git stash</code></p></li>
+</ul></li>
+<li>
+<p><code>git stash list</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Lists all stashes.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git stash list</code></p></li>
+</ul></li>
+<li>
+<p><code>git stash apply</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Applies the most recent stash.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git stash apply</code></p></li>
+</ul></li>
+<li>
+<p><code>git stash drop</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Deletes the most recent stash.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git stash drop</code></p></li>
+</ul></li>
+</ul>
+<h4 id=3D"GITCheatSheet-8.Tagging"><strong>8. Tagging</strong></h4>
+<ul>
+<li>
+<p><code>git tag</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Lists all tags.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git tag</code></p></li>
+</ul></li>
+<li>
+<p><code>git tag -a &lt;tag-name&gt; -m "Message"</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Creates an annotated tag with the specifie=
+d name and message.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git tag -a v1.0 -m "Version 1.0"<=
+/code></p></li>
+</ul></li>
+<li>
+<p><code>git push origin &lt;tag-name&gt;</code></p>
+<ul>
+<li>
+<p><strong>Explanation:</strong> Pushes the specified tag to the remote rep=
+ository.</p></li>
+<li>
+<p><strong>Sample Command:</strong> <code>git push origin v1.0</code></p></=
+li>
+</ul></li>
+</ul>
+<h3 id=3D"GITCheatSheet-Example">Example</h3>
+<p>Let's create a branch, make changes, and push to a remote repository.</p=
+>
+<div class=3D"code panel pdl" style=3D"border-width: 1px;">
+<div class=3D"codeContent panelContent pdl">
+<pre class=3D"syntaxhighlighter-pre" data-syntaxhighlighter-params=3D"brush=
+: bash; gutter: false; theme: Confluence" data-theme=3D"Confluence"># Clone=
+ a repository
+git clone &lt;https://github.com/user/repo.git&gt;
+
+# Navigate to the directory
+cd repo
+
+# Create and switch to a new branch
+git checkout -b feature-branch
+
+# Make changes to a file
+echo "Some changes" &gt;&gt; file.txt
+
+# Stage the changes
+git add file.txt
+
+# Commit the changes
+git commit -m "Add some changes to file.txt"
+
+# Push the branch to the remote repository
+git push origin feature-branch</pre>
+</div>
+</div>
+<p></p>
+    </div>
+</body>
+</html>
+------=_Part_98_2002366323.1721810193602--
